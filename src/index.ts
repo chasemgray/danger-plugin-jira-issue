@@ -96,7 +96,7 @@ export default function jiraIssue(options: Options) {
     }
   } else {
     const firstKey = Array.isArray(key) ? key[0] : key
-    warn(
+    fail(
       `Please add the JIRA issue key to the PR ${location} (e.g. ${firstKey}-123)`
     )
   }
